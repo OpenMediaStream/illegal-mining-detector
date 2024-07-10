@@ -2,7 +2,7 @@ from PIL import Image
 
 from ultralytics import YOLO
 
-model = YOLO("./runs/detect/train/weights/best.pt")
+model = YOLO("./runs/detect/Sentinel+Landsat/weights/best.pt")
 
 results = model("./teste.jpg", iou=0.7, conf=0.4)
 print(results)
